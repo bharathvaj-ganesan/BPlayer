@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="player.css">
+	<script type="text/javascript" src="player.js"></script>
+</head>
+<body>
+	<div id = "contextMenu" class="context-menu">
+         <ul>
+            <li>Menu1</li>
+            <li>Menu2</li>
+            <li>Menu3</li>
+            <li class="separator"></li>
+            <li>Menu4</li>
+            <li>Menu5</li>
+         </ul>
+      </div>  
+	<div id="player" >
+
+		<div id="video-container" class="container" oncontextmenu="return showContextMenu(event);" >
+			<div id="screen" >
+				<img id="screen-button" src="images/play.png">
+			</div>
+			<video id="video" poster="images/startimg.png" >
+				<source src="sample.mp4" class="container" oncontextmenu="return showContextMenu(event);">
+				It seems your browser doesn't support the HTML5 video tag. Please update it!
+			</video>
+		</div>
+
+		<div id="pbar-container">
+			<div id="pbar"></div>
+		</div>
+
+		<div id="buttons-container">
+			<img id="play-button" src="images/play.png">
+			<div id="time-field">
+				0:00 / 0:00
+			</div>
+			<img id="sound-button" src="images/sound.png">
+			<div id="sbar-container">
+				<div id="sbar"></div>
+			</div>
+			<img id="fullscreen-button" src="images/fullscreen.png">
+		</div>
+
+	</div>
+</body>
+</html>
